@@ -4,6 +4,8 @@ import java.util.List;
 import javax.persistence.CascadeType;
 import javax.persistence.Entity;
 import javax.persistence.OneToMany;
+
+import play.Logger;
 import play.db.jpa.Model;
 import static controllers.Accounts.getLoggedInMember;
 
@@ -12,11 +14,11 @@ import static controllers.Accounts.getLoggedInMember;
 public class Member extends Model
 {
     public String name;
-    public static String gender;
+    public String gender;
     public String email;
     public String password;
     public String address;
-    public static float height;
+    public float height;
     public static float startingWeight;
 
     @OneToMany(cascade = CascadeType.ALL)
@@ -28,11 +30,11 @@ public class Member extends Model
     public Member(String name, String gender, String email, String password, String address, float height, float startingWeight)
     {
         this.name = name;
-        Member.gender = gender;
+        this.gender = gender;
         this.email = email;
         this.password = password;
         this.address = address;
-        Member.height = height;
+        this.height = height;
         Member.startingWeight = startingWeight;
     }
 
@@ -40,10 +42,7 @@ public class Member extends Model
      * Getters and setters for Member class to follow
      * @return
      */
-    public static float getHeight()
-    {
-        return height;
-    }
+    public float getHeight() { return this.height; }
     public void setHeight(float height)
     {
         this.height = height;
@@ -56,9 +55,9 @@ public class Member extends Model
     {
         this.startingWeight = startingWeight;
     }
-    public static String getGender()
+    public String getGender()
     {
-        return gender;
+        return this.gender;
     }
     public void setGender(String gender)
     {
@@ -98,8 +97,9 @@ public class Member extends Model
     {
         float BMI = 0;
         float roundBMI;
-        float calcHeight = Member.getHeight();
-        List<Stat> stats = getLoggedInMember().stats;
+        Member member = getLoggedInMember();
+        float calcHeight = member.getHeight();
+        List<Stat> stats = member.stats;
         float memberStatWeight =0;
 
         if(stats.size() != 0)
@@ -107,7 +107,7 @@ public class Member extends Model
             int mostRecent = stats.size() -1;
             memberStatWeight = stats.get(mostRecent).getWeight();
         }
-        BMI= ((memberStatWeight)/(calcHeight*calcHeight)*10000); //calculates BMI
+        BMI= ((memberStatWeight)/(calcHeight*calcHeight)); //calculates BMI
         roundBMI = (float) (Math.round(BMI*100)/100.0); // rounds to 2 decimals
         return roundBMI;
     }
@@ -119,20 +119,7 @@ public class Member extends Model
      */
     public static String determineBMICategory()
     {
-        float BMI = 0;
-        float roundBMI;
-        float calcHeight = Member.getHeight();
-        List<Stat> stats = getLoggedInMember().stats;
-        float memberStatWeight =0;
-
-        if(stats.size() != 0)
-        {
-            int mostRecent = stats.size() -1;
-            memberStatWeight = stats.get(mostRecent).getWeight();
-        }
-        BMI= ((memberStatWeight)/(calcHeight*calcHeight)*10000); //calculates BMI
-        roundBMI = (float) (Math.round(BMI*100)/100.0); // rounds to 2 decimals
-
+        float roundBMI = calculateMemberBMI();
 
         String bmiCat ="";
 
@@ -171,7 +158,8 @@ public class Member extends Model
      */
     public static float heightConversion ()
     {
-        float meterHeight = Member.getHeight();
+        float meterHeight = getLoggedInMember().getHeight();
+        Logger.info ("Meter Height = " + meterHeight);
         float inchesHeight =0;
         inchesHeight = (float) (meterHeight*39.37);
         return  inchesHeight;
@@ -190,20 +178,37 @@ public class Member extends Model
     {
         String weightCheck = "";
         boolean idealWeight = false;
-        float mWeight = Member.startingWeight;
+        Member member = getLoggedInMember();
+        List<Stat> stats = member.stats;
+        float memberStatWeight =0;
+
+        if(stats.size() != 0)
+        {
+            int mostRecent = stats.size() -1;
+            memberStatWeight = stats.get(mostRecent).getWeight();
+        }
+        else
+        {
+            memberStatWeight = Member.getStartingWeight();
+        }
         float hCon = heightConversion();
         float excessInches = 0;
         float calcIdealWeight = 0;
-        String gender = Member.getGender();
+        String gender = getLoggedInMember().getGender();
+
+        Logger.info ("hCon = " + hCon);
+
+
 
         if (hCon > 60) // if the member is over 5 ft
         {
             excessInches = hCon - 60; // calculate the number of excess inches
         }
-        if (Member.getGender().equals("male"))
+        Logger.info ("Excess Inches = " + excessInches);
+        if (getLoggedInMember().getGender().equals("male"))
         {
             calcIdealWeight = (float) (50 + (2.3 * excessInches)); //if excessInches has remained as 0 (person is therefore under 5ft & 50 + 0 is still 50) if not calculation are made on each inch above 5 ft
-            if ((mWeight >= (calcIdealWeight - 0.2)) && (mWeight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
+            if ((memberStatWeight >= (calcIdealWeight - 0.2)) && (memberStatWeight <= (calcIdealWeight + 0.2))) //allowing for buffer of +/- 0.2kg
             {
                 idealWeight = true; //if not boolean remains false
             }
@@ -211,12 +216,14 @@ public class Member extends Model
         else
         {
             calcIdealWeight = (float) (45.5 + (2.3 * excessInches)); // same as above with weights changed as the person is either Female or non Specified
-            if ((mWeight >= (calcIdealWeight - 0.2)) && (mWeight <= (calcIdealWeight + 0.2)))
+            if ((memberStatWeight >= (calcIdealWeight - 0.2)) && (memberStatWeight <= (calcIdealWeight + 0.2)))
             {
                 idealWeight = true;
             }
+            Logger.info ("Weight = " + memberStatWeight);
+            Logger.info ("calcIdealWeight = " + calcIdealWeight);
         }
-        if (idealWeight == true) //Returns String response based on the boolean value passed to it.
+        if (idealWeight) //Returns String response based on the boolean value passed to it.
         {
             weightCheck += "You are an Ideal Weight";
         }

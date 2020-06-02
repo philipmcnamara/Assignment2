@@ -25,13 +25,13 @@ Stat(s3):
   Hips: 36
 Stat(s4):
   statDate: 31-05-20
-  Weight: 62
+  Weight: 66
   Chest: 32
   Thigh: 20
   UpperArm: 14
   Waist: 30
   Hips: 34
-  weightTrend: true
+  weightTrend: false
   Comment: Good Work!
 Stat(s5):
   statDate: 30-05-20
@@ -81,7 +81,7 @@ Member(m1):
   email: homer@simpson
   password: homer
   address: address
-  height: 180
+  height: 1.80
   startingWeight: 90
   stats:
     - s1
@@ -93,7 +93,7 @@ Member(m2):
   email: marge@simpson
   password: marge
   address: address1
-  height: 190
+  height: 1.75
   startingWeight: 65
   stats:
     - s3
@@ -105,7 +105,7 @@ Member(m3):
   email: gandpa@simpson
   password: grandpa
   address: address1
-  height: 175
+  height: 1.75
   startingWeight: 124
   stats:
     - s5
@@ -117,7 +117,7 @@ Member(m4):
   email: bart@simpson
   password: bart
   address: address1
-  height: 122
+  height: 1.55
   startingWeight: 44
   stats:
     - s7
