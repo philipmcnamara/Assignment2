@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27eb3f25-72f7-43b5-8092-60ec10918194" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Assignment2.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2.iws" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/conf/data.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/data.yml" afterDir="false" />
-    </list>
+    <list default="true" id="27eb3f25-72f7-43b5-8092-60ec10918194" name="Default Changelist" comment="" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -75,6 +72,7 @@
       <workItem from="1591005270620" duration="27579000" />
       <workItem from="1591100230224" duration="5573000" />
       <workItem from="1591116654459" duration="2176000" />
+      <workItem from="1591127020194" duration="785000" />
     </task>
     <servers />
   </component>
