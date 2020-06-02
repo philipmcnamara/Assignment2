@@ -1,7 +1,12 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="27eb3f25-72f7-43b5-8092-60ec10918194" name="Default Changelist" comment="" />
+    <list default="true" id="27eb3f25-72f7-43b5-8092-60ec10918194" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/system.properties" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Assignment2.iws" beforeDir="false" afterPath="$PROJECT_DIR$/Assignment2.iws" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/application.conf" beforeDir="false" afterPath="$PROJECT_DIR$/conf/application.conf" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/conf/dependencies.yml" beforeDir="false" afterPath="$PROJECT_DIR$/conf/dependencies.yml" afterDir="false" />
+    </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
     <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
@@ -30,7 +35,7 @@
     <property name="WebServerToolWindowFactoryState" value="false" />
     <property name="aspect.path.notification.shown" value="true" />
     <property name="extract.method.default.visibility" value="private" />
-    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/WebDev/WebDevAssignment2-master" />
+    <property name="last_opened_file_path" value="$PROJECT_DIR$" />
     <property name="nodejs_package_manager_path" value="npm" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.0" />
@@ -71,6 +76,7 @@
       <workItem from="1590944628522" duration="14401000" />
       <workItem from="1591005270620" duration="27579000" />
       <workItem from="1591100230224" duration="5573000" />
+      <workItem from="1591116654459" duration="191000" />
     </task>
     <servers />
   </component>
