@@ -1,0 +1,140 @@
+Stat(s1):
+  statDate: 30-05-20
+  Weight: 86
+  Chest: 28
+  Thigh: 22
+  UpperArm: 16
+  Waist: 36
+  Hips: 38
+Stat(s2):
+  statDate: 31-05-20
+  Weight: 84
+  Chest: 28
+  Thigh: 22
+  UpperArm: 16
+  Waist: 35
+  Hips: 38
+  weightTrend: true
+Stat(s3):
+  statDate: 30-05-20
+  Weight: 65
+  Chest: 32
+  Thigh: 20
+  UpperArm: 14
+  Waist: 30
+  Hips: 36
+Stat(s4):
+  statDate: 31-05-20
+  Weight: 62
+  Chest: 32
+  Thigh: 20
+  UpperArm: 14
+  Waist: 30
+  Hips: 34
+  weightTrend: true
+  Comment: Good Work!
+Stat(s5):
+  statDate: 30-05-20
+  Weight: 124
+  Chest: 44
+  Thigh: 22
+  UpperArm: 19
+  Waist: 38
+  Hips: 42
+  weightTrend:
+  Comment:
+Stat(s6):
+  statDate: 31-05-20
+  Weight: 125
+  Chest: 44
+  Thigh: 22
+  UpperArm: 19
+  Waist: 38
+  Hips: 43
+  weightTrend: false
+  Comment: Try Harder!
+Stat(s7):
+  statDate: 30-05-20
+  Weight: 44
+  Chest: 28
+  Thigh: 24
+  UpperArm: 11
+  Waist: 24
+  Hips: 26
+  weightTrend:
+  Comment:
+Stat(s8):
+  statDate: 31-05-20
+  Weight: 40
+  Chest: 28
+  Thigh: 24
+  UpperArm: 11
+  Waist: 24
+  Hips: 26
+  weightTrend: true
+  Comment: Keep it Up!
+
+
+Member(m1):
+  name: Homer Simpson
+  gender: male
+  email: homer@simpson
+  password: homer
+  address: address
+  height: 180
+  startingWeight: 90
+  stats:
+    - s1
+    - s2
+
+Member(m2):
+  name: Marge Simpson
+  gender: female
+  email: marge@simpson
+  password: marge
+  address: address1
+  height: 190
+  startingWeight: 65
+  stats:
+    - s3
+    - s4
+
+Member(m3):
+  name: GrandPa Simpson
+  gender: male
+  email: gandpa@simpson
+  password: grandpa
+  address: address1
+  height: 175
+  startingWeight: 124
+  stats:
+    - s5
+    - s6
+
+Member(m4):
+  name: Bart Simpson
+  gender: male
+  email: bart@simpson
+  password: bart
+  address: address1
+  height: 122
+  startingWeight: 44
+  stats:
+    - s7
+    - s8
+
+Trainer(t1):
+  name: Moe Szyslak
+  email: moe@test
+  password: moe
+  members:
+    - m1
+    - m2
+
+Trainer(t2):
+  name: Barney Gumble
+  email: barney@test
+  password: barney
+  members:
+    - m3
+    - m4

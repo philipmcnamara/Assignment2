@@ -1,0 +1,53 @@
+Stats(s1):
+  Weight: 124
+  Chest: 45
+  Thigh: 12
+  UpperArm: 23
+  Waist: 32
+  Hips: 38
+Stats(s2):
+  Weight: 75
+  Chest: 44
+  Thigh: 12
+  UpperArm: 24
+  Waist: 31
+  Hips: 35
+Stats(s3):
+  Weight: 65
+  Chest: 36
+  Thigh: 12
+  UpperArm: 16
+  Waist: 32
+  Hips: 36
+Stats(s4):
+  Weight: 65
+  Chest: 36
+  Thigh: 12
+  UpperArm: 15
+  Waist: 32
+  Hips: 36
+
+Member(m1):
+  name: Homer Simpson
+  gender: male
+  email: homer@simpson
+  password: test
+  address: EverGreen Terrace
+  height: 190
+  startingWeight: 87
+  stats:
+    - s1
+    - s2
+
+Member(m2):
+  name: Marge Simpson
+  gender: female
+  email: marge@simpson
+  password: test
+  address: EverGreen Terrace
+  height: 150
+  startingWeight: 60
+  stats:
+    -s3
+    -s4
+

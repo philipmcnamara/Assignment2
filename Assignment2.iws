@@ -1,0 +1,142 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="27eb3f25-72f7-43b5-8092-60ec10918194" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+        <option value="HTML File" />
+      </list>
+    </option>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
+  </component>
+  <component name="ProjectId" id="1b517qts4uA7GDrAVmneIlDW7JA" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="DefaultHtmlFileTemplate" value="HTML File" />
+    <property name="RunOnceActivity.OpenProjectViewOnStart" value="true" />
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="WebServerToolWindowFactoryState" value="false" />
+    <property name="aspect.path.notification.shown" value="true" />
+    <property name="extract.method.default.visibility" value="private" />
+    <property name="last_opened_file_path" value="$USER_HOME$/OneDrive/Desktop/WebDev/WebDevAssignment2-master" />
+    <property name="nodejs_package_manager_path" value="npm" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.0" />
+    <property name="project.structure.side.proportion" value="0.0" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveClassesOrPackagesDialog.RECENTS_KEY">
+      <recent name="" />
+    </key>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="27eb3f25-72f7-43b5-8092-60ec10918194" name="Default Changelist" comment="" />
+      <created>1587906975959</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1587906975959</updated>
+      <workItem from="1587906977719" duration="3749000" />
+      <workItem from="1588007225422" duration="7127000" />
+      <workItem from="1588016070031" duration="2708000" />
+      <workItem from="1588097190496" duration="11160000" />
+      <workItem from="1588161840859" duration="6058000" />
+      <workItem from="1588183839656" duration="1965000" />
+      <workItem from="1588272613801" duration="257000" />
+      <workItem from="1590654297453" duration="6977000" />
+      <workItem from="1590671130509" duration="9161000" />
+      <workItem from="1590680952048" duration="13537000" />
+      <workItem from="1590740642834" duration="19200000" />
+      <workItem from="1590839955173" duration="8158000" />
+      <workItem from="1590849841892" duration="20533000" />
+      <workItem from="1590921530865" duration="2798000" />
+      <workItem from="1590933921862" duration="28000" />
+      <workItem from="1590942280113" duration="1572000" />
+      <workItem from="1590944236159" duration="100000" />
+      <workItem from="1590944628522" duration="14401000" />
+      <workItem from="1591005270620" duration="27579000" />
+      <workItem from="1591100230224" duration="5573000" />
+    </task>
+    <servers />
+  </component>
+  <component name="TypeScriptGeneratedFilesManager">
+    <option name="version" value="2" />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="249" y="0" key="#Project_Structure" timestamp="1590944792354">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="249" y="0" key="#Project_Structure/0.0.1536.824@0.0.1536.824" timestamp="1590944792354" />
+    <state x="312" y="246" key="#Template_Data_Languages" timestamp="1590857884894">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="312" y="246" key="#Template_Data_Languages/0.0.1536.824@0.0.1536.824" timestamp="1590857884894" />
+    <state x="816" y="105" key="#com.intellij.ide.util.MemberChooser" timestamp="1590859488472">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="816" y="105" key="#com.intellij.ide.util.MemberChooser/0.0.1536.824@0.0.1536.824" timestamp="1590859488472" />
+    <state x="936" y="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes" timestamp="1588015695467">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="936" y="280" key="#com.intellij.refactoring.move.moveClassesOrPackages.MoveClassesOrPackagesDialog.classes/0.0.1536.824@0.0.1536.824" timestamp="1588015695467" />
+    <state x="342" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog" timestamp="1590682950452">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="342" y="0" key="#com.intellij.refactoring.rename.AutomaticRenamingDialog/0.0.1536.824@0.0.1536.824" timestamp="1590682950452" />
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog" timestamp="1590951248296">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="159" key="#com.intellij.refactoring.safeDelete.UnsafeUsagesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590951248296" />
+    <state x="503" y="264" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1" timestamp="1588107916698">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="503" y="264" key="ANALYSIS_DLG_com.intellij.analysis.BaseAnalysisAction$1/0.0.1536.824@0.0.1536.824" timestamp="1588107916698" />
+    <state x="933" y="170" key="FileChooserDialogImpl" timestamp="1591102578340">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="933" y="170" key="FileChooserDialogImpl/0.0.1536.824@0.0.1536.824" timestamp="1591102578340" />
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt" timestamp="1590853004247">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="584" y="346" key="ReplaceDuplicatesPrompt/0.0.1536.824@0.0.1536.824" timestamp="1590853004247" />
+    <state x="809" y="115" key="RollbackChangesDialog" timestamp="1590671156730">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="809" y="115" key="RollbackChangesDialog/0.0.1536.824@0.0.1536.824" timestamp="1590671156730" />
+    <state x="862" y="100" width="581" height="630" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog" timestamp="1591032148017">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="862" y="100" width="581" height="630" maximized="true" key="com.intellij.history.integration.ui.views.FileHistoryDialog/0.0.1536.824@0.0.1536.824" timestamp="1591032148017" />
+    <state x="499" y="163" key="extract.method.dialog" timestamp="1590856893291">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="499" y="163" key="extract.method.dialog/0.0.1536.824@0.0.1536.824" timestamp="1590856893291" />
+    <state x="475" y="160" key="refactoring.ChangeSignatureDialog" timestamp="1590752496573">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="475" y="160" key="refactoring.ChangeSignatureDialog/0.0.1536.824@0.0.1536.824" timestamp="1590752496573" />
+    <state x="425" y="187" key="run.anything.popup" timestamp="1590690352311">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="425" y="187" key="run.anything.popup/0.0.1536.824@0.0.1536.824" timestamp="1590690352311" />
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup" timestamp="1590850615528">
+      <screen x="0" y="0" width="1536" height="824" />
+    </state>
+    <state x="814" y="145" width="672" height="678" key="search.everywhere.popup/0.0.1536.824@0.0.1536.824" timestamp="1590850615528" />
+  </component>
+</project>

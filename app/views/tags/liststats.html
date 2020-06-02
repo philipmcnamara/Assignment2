@@ -1,0 +1,57 @@
+<table class="ui fixed single line celled table">
+<thead>
+    <tr>
+        <th> Date </th>
+        <th> Weight </th>
+        <th> Chest </th>
+        <th> Thigh </th>
+        <th> UpperArm </th>
+        <th> Waist </th>
+        <th> Hips </th>
+        <th>Weight Trend</th>
+        <th> Comment </th>
+    </tr>
+    </thead>
+    <tbody>
+    #{list items:_member.stats, as: 'stat'} <!List of all member stats (Assessments)  >
+    <tr>
+        <td>
+            ${stat.statDate}
+        </td>
+        <td>
+            ${stat.Weight}
+        </td>
+        <td>
+            ${stat.Chest}
+        </td>
+        <td>
+            ${stat.Thigh}
+        </td>
+        <td>
+            ${stat.UpperArm}
+        </td>
+        <td>
+            ${stat.Waist}
+        </td>
+        <td>
+            ${stat.Hips}
+        </td>
+        <td>
+             #{if stat.weightTrend==false}
+                 <i class="ui large red arrow alternate circle up outline icon"></i>
+             #{/if}
+
+             #{else}
+                 <i class="ui large green arrow alternate circle down outline icon"></i>
+            #{/else}
+        <td>
+            ${stat.Comment}
+        </td>
+        <td>
+        <a href="/members/${_member.id}/deletestat/${stat.id}" class="ui icon button"> <!function to remove a stat >
+                <i class="icon trash"></i>
+        </td>
+    </tr>
+    #{/list}
+    </tbody>
+</table>

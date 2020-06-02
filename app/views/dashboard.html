@@ -1,0 +1,21 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"dashboard"/}
+
+#{list items:members, as:'member'}
+<section class="ui black horizontal segment">
+  <h2 class="ui blue header">
+    Member:
+    </h2>
+  <h3 class="ui header">
+  ${member.name}
+  </h3>
+  <a href="/trainermembers/${member.id}" button class="ui blue submit button">View Member Progress</button>
+  </a>
+  <a href="/trainer/deletemember/${member.id}" button class="ui red submit button">Delete Member</button>
+  </a>
+</section>
+#{/list}
+
+

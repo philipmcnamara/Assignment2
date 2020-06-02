@@ -1,0 +1,60 @@
+<table class="ui fixed single line celled table">
+    <thead>
+    <tr>
+        <th> Weight </th>
+        <th> Chest </th>
+        <th> Thigh </th>
+        <th> UpperArm </th>
+        <th> Waist </th>
+        <th> Hips </th>
+        <th>Weight Trend</th>
+        <th> Comment </th>
+    </tr>
+    </thead>
+    <tbody>
+    #{list items:_member.stats, as: 'stat'}
+    <tr>
+        <td>
+        ${stat.Weight}
+        </td>
+        <td>
+        ${stat.Chest}
+        </td>
+        <td>
+        ${stat.Thigh}
+        </td>
+        <td>
+        ${stat.UpperArm}
+        </td>
+        <td>
+        ${stat.Waist}
+        </td>
+        <td>
+        ${stat.Hips}
+        </td>
+        <td>
+            #{if stat.weightTrend==false}
+                <i class="ui large red arrow alternate circle up outline icon"></i> <!Adds in icon based on weather the member lost or gained weight, makes a break-even red as well because that's not real progress >
+            #{/if}
+
+            #{else}
+                <i class="ui large green arrow alternate circle down outline icon"></i>
+            #{/else}
+        <td>
+        ${stat.Comment}
+        </td>
+    </tr>
+    <tr>
+        <td>
+            <form class="ui black horizontal form" action="/members/${_member.id}/addcomment/${stat.id}" method="POST"> <!Allows member to enter a comment, I hate how this looks i would have pulled it from the table and added it between the stats if I had the time >
+            <div class="field">
+                <label>Comment</label>
+                <input placeholder="Comment" type="text" name="Comment">
+            </div>
+                <button class="ui tiny blue submit button">Add Comment</button>
+            </form>
+        </td>
+    </tr>
+    #{/list}
+    </tbody>
+</table>

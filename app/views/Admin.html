@@ -1,0 +1,42 @@
+#{extends 'main.html' /}
+#{set title:'Dashboard' /}
+
+#{menu id:"admin"/}
+
+<section class="ui black horizontal segment">
+    <h2 class="ui header">
+        All Known Stats in the Database:
+    </h2>
+    <table class="ui fixed table">
+        <thead>
+        <tr>
+            <th>ID </th>
+            <th>Stats</th>
+            <th>Member</th>
+        </tr>
+        </thead>
+        <tbody>
+        #{list items:stats, as:'stats'}
+        <tr>
+            <td>
+            ${stats.Weight}
+            </td>
+            <td>
+            ${stats.Chest}
+            </td>
+            <td>
+            ${stats.Thigh}
+            </td>
+            <td>
+            ${stats.UpperArm}
+            </td>
+            <td>
+            ${stats.Waist}
+            </td>
+            <td>
+            ${stats.Hips}
+            </td>
+        #{/list}
+        </tbody>
+    </table>
+</section>

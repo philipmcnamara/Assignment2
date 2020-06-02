@@ -1,0 +1,43 @@
+#{extends 'main.html' /}
+#{set title:'Member' /}
+
+#{menu id:"member"/}
+
+<section class="ui black horizontal segment">
+    <div class="ui container four column grid">
+        <div class="column">
+            <h2 class="ui centered header">
+                <div class="column">
+                    <i class="ui centered big user icon"></i>
+                </div>
+            ${member.name}
+            </h2>
+        </div>
+        <div class="column">
+            <h2 class="ui centered header">
+                <div class="column">
+                    <i class="ui big red heartbeat icon"></i>
+                ${member.calculateMemberBMI()}
+                </div>
+                <p>BMI</p>
+            </h2>
+        </div>
+        <div class="column">
+            <h2 class="ui centered header">
+                <div class="column">
+                    <i class="big medkit icon"></i>
+                </div>
+            ${member.determineBMICategory()}
+            </h2>
+        </div>
+        <div class="column">
+            <h2 class="ui centered header">
+                <div class="column">
+                    <i class="ui big balance scale icon"></i>
+                </div>
+            ${member.isIdealBodyWeight()}
+            </h2>
+        </div>
+    </div>
+#{trainerliststats member:member /}
+</section>
